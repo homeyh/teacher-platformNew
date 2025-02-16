@@ -1,0 +1,13 @@
+{
+  "name": "teacher-platform-client",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.x",
+    "@apollo/client": "^3.x",
+    "graphql": "^16.x",
+    "tailwindcss": "^3.x"
+  }
+} 
