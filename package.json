@@ -2,8 +2,10 @@
   "name": "teacher-platformnew",
   "version": "1.0.0",
   "description": "مشروع منصة تعليمية مبني باستخدام: - React - Node.js - Express.js - MongoDB - JWT - GraphQL - Tailwind CSS",
-  "main": "index.js",
+  "main": "server.js",  // Changed from index.js to server.js
   "scripts": {
+    "start": "node server.js",  // Added the start script to run your server
+    "dev": "nodemon server.js", // Added a dev script for local development
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,7 +16,13 @@
     "bcryptjs": "^3.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
+    "express": "^4.18.2",  // Added express for the server
     "express-graphql": "^0.12.0",
-    "jsonwebtoken": "^9.0.2"
+    "graphql": "^15.6.0",   // Added graphql for GraphQL support
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^5.10.0"   // Added mongoose for MongoDB connection
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"  // Added nodemon for development environment (auto-reload)
   }
 }
